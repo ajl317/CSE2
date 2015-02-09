@@ -22,7 +22,5 @@
                 thousands = (int) (userInput3*1000)%10;        //find the digit in the thousands place
                 tenThousands = (int) (userInput3*10000)%10;   //find the digit in the ten thousands place
                 System.out.println("The four digits are " +tens+hundreds+thousands+tenThousands);        //print out the four digits to the right of the decimal
-                System.out.println(userInput2);
-                System.out.println(userInput3);
             }   //end of main method
         }   //end of class
