@@ -48,12 +48,9 @@ import java.util.Scanner;   //define scanner
             System.out.println("");     //print blank line
             System.out.print("Enter y or Y to go again: ");     //prompt user for input
             String response = myScanner.next();     //initialize string
-            if (response.equals("y") || response.equals("Y")) {
-                continue;
-            }   //end of if statement
-            else {
+            if (!response.equals("y") && !response.equals("Y")) {
                 break;
-            }       //end of else statement
+            }       //end of if statement
             }       //end of while loop 
         }   //end of main method
     }   //end of class
