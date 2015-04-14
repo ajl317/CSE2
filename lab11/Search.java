@@ -58,9 +58,10 @@ public class Search{
       int Low = 0;    //set low 
       int High = 49;   //set max
       int middle = (Low + High)/2;    //find the middle
-      while (Low < High) {
+      while (Low <= High) {
         if (array2 [middle] < target) {
           Low = middle +1;    //set new low
+          middle = (Low + High)/2;    //find new middle
         }   //end of if statement
         else if ( array2 [middle] == target) {
           System.out.println(target + " was found at location " + (middle +1) + ".");   //print out that the value was found
@@ -71,7 +72,7 @@ public class Search{
           middle = (Low + High)/2;    //find new middle
         }   //end of else statement
       }   //end of while loop
-      if (Low == High ) {
+      if (Low > High ) {
         System.out.println("Target was not found in the list.");    //tell user that the target is not in the list
         System.out.println("The number below the target was " + array2 [middle + 1]);    //print this line
         System.out.println("The number above the target was " + array2 [middle]);   //print this line
