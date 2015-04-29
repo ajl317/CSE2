@@ -25,7 +25,7 @@ import java.util.Scanner;       //define scanner
             }   //end of while loop
             int total = 0;      //define variable
             int input2 = input;     //new variable for calculation
-            for (int i = 0; i <= input2; i++) {
+            for (int i = 1; i <= input2; i++) {
                 total +=factorial(i);   //redefine total
             }   //end of for statement
             print(total);     //print the sum function

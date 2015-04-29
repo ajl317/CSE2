@@ -74,8 +74,8 @@ public class Search{
       }   //end of while loop
       if (Low > High ) {
         System.out.println("Target was not found in the list.");    //tell user that the target is not in the list
-        System.out.println("The number below the target was " + array2 [middle + 1]);    //print this line
-        System.out.println("The number above the target was " + array2 [middle]);   //print this line
+        System.out.println("The number below the target was " + array2 [middle]);    //print this line
+        System.out.println("The number above the target was " + array2 [middle + 1]);   //print this line
       }   //end of if statement
     }   //end of main method
 }   //end of class
