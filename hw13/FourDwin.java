@@ -57,9 +57,11 @@ public class FourDwin {
             int dimension = rand.nextInt(input2 - input1) + input1;     //generate random int between 2 user values
             array1[i] = new double [dimension][][];      //length of next dimension
             for (int j = 0; j < array1[i].length; j++) {
-                array1[i][j] = new double [dimension][];        //length of next dimension
+                int dimension2 = rand.nextInt(input2 - input1) + input1;     //generate random int between 2 user values
+                array1[i][j] = new double [dimension2][];        //length of next dimension
                 for (int k =0; k < array1[i][j].length; k++) {
-                    array1[i][j][k] = new double [dimension];       //length of last dimension
+                    int dimension3 = rand.nextInt(input2 - input1) + input1;     //generate random int between 2 user values
+                    array1[i][j][k] = new double [dimension3];       //length of last dimension
                     for (int m = 0; m < array1[i][j][k].length; m++) {
                         double value = rand.nextDouble()*30;        //generates random number between 0 and 30
                         int h = (int) (value*10);
@@ -159,9 +161,9 @@ public class FourDwin {
         double sum = 0;         //initialize variable
         double mean = 0;        //initialize variable
         for (int i = 0; i < x.length; i++) {
-            for (int j = 0; j < x[0].length; j++) {
-                for (int k = 0; k < x[0][0].length; k++) {
-                    for (int l = 0; l < x[0][0][0].length; l++) {
+            for (int j = 0; j < x[i].length; j++) {
+                for (int k = 0; k < x[i][j].length; k++) {
+                    for (int l = 0; l < x[i][j][k].length; l++) {
                         sum += x[i][j][k][l];       //add all members to each other
                         counter++;      //keep track of every member counted
                     }       //end of for loop
